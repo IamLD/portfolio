@@ -1,3 +1,62 @@
-html,body{
-	background: #000;
+/*	initialize	*/
+*{
+	        box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	outline: none;
 }
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+	-webkit-overflow-scrolling: touch;
+}
+	.container-fluid{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+		.container-fluid:before,.container-fluid:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 7px;
+			background: #48A2DA;
+			background: -webkit-linear-gradient(45deg, #48A2DA, #53B095);
+	    background: -o-linear-gradient(45deg, #48A2DA, #53B095);
+	    background: -moz-linear-gradient(45deg, #48A2DA, #53B095);
+	    background: linear-gradient(45deg, #48A2DA, #53B095);
+		}
+		.container-fluid:before{
+			top: 0;
+		}
+		.container-fluid:after{
+			bottom: 0;
+		}
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+		height: 100%;
+	}
+		.building{
+			height: 100%;
+			text-align: center;
+			font-size: 0;
+		}
+			.building:before{
+				content: "";
+				display: inline-block;
+				width: 0;
+				height: 100%;
+				vertical-align: middle;
+			}
+			.building>span{
+				font-size: 18px;
+				vertical-align: middle;
+			}
+		header{}
+		main{}
